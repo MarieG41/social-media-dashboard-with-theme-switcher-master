@@ -1,4 +1,54 @@
 .resume-data {
+    position: absolute;
+    top: 170px;
+    width: 92%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-row: 1.5fr;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: center;
+    gap: 40px;
+    h1 {
+        font-weight: var(--heavy-weight);
+        font-size: 70px;
+        color: var(--Very-Dark-Blue-Text);
+        padding: 25px 0 8px 0;
+    }
+    h3 {
+        font-variant: small-caps;
+        padding-bottom: 20px;
+    }
+    p {
+        color: var(--Dark-Grayish-Blue-Text);
+        font-weight: var(--heavy-weight);
+        font-size: 14px;
+        img {
+            padding-right: 5px;
+            padding-bottom: 2.5px;
+        }
+        .logo {
+            padding-bottom: 0;
+            padding-right: 8px;
+        }
+    }
+    .fb-resume-data, .twitter-resume-data, .ig-resume-data, .yt-resume-data {
+        background-color: var(--Light-Grayish-Blue-Card-bg);
+        text-align: center;
+        padding: 50px 0;
+        border-radius: 8px;
+    }
+    .fb-resume-data {
+        border-top: 5px solid var(--Facebook);
+    }
+    .twitter-resume-data {
+        border-top: 5px solid var(--Twitter);
+    }
+    .ig-resume-data {
+        border-top: 5px solid;
+        border-color: hsl(329, 70%, 58%);
+    }
+    .yt-resume-data {
+        border-top: 5px solid var(--YouTube);
+    }
 }

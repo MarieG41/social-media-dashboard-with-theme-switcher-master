@@ -1,9 +1,40 @@
 .overview-data {
-    margin-top: 50px;
+    margin-top: 150px;
+    padding-left: 80px;
+    padding-right: 80px;
+    h2 {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-size: 25px;
+        font-weight: var(--heavy-weight);
+        color: var(--Dark-Grayish-Blue-Text);
+    }
     .overview {
         margin-top: 20px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1.3fr 1.3fr;
+        gap: 30px;
+        .fb-page-views, .fb-likes, .ig-likes, .ig-profile-views, .retweet, .tw-likes, .yt-likes, .yt-views {
+            background-color: var(--Light-Grayish-Blue-Card-bg);
+            display: grid;
+            grid-template-columns: 0.35fr 0.35fr;
+            grid-template-rows: 80px 35px;
+            column-gap: 40px;
+            padding: 30px 15px;
+            justify-content:space-between;
+            border-radius: 8px;
+            color: var(--Very-Dark-Blue-Text);
+            h1 {
+                font-size: 35px;
+                font-weight: var(--heavy-weight);
+            }
+            p {
+                font-weight: var(--heavy-weight);
+                color: var(--Dark-Grayish-Blue-Text);
+                margin-bottom: 50px;
+                
+            }
+        }
     }
 }

@@ -4,7 +4,7 @@
 
     --Facebook: hsl(208, 92%, 53%);
     --Twitter: hsl(203, 89%, 53%);
-    --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --Instagram: linear-gradient(hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
     --YouTube: hsl(348, 97%, 39%);
 
     --Toggle-dark: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
@@ -22,13 +22,21 @@
     --Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
     --Very-Dark-Blue-Text: hsl(230, 17%, 14%);
 
-    --light-weight: font-weight: 400;
-    --heavy-weight: font-weight: 700;
+    --light-weight: 400;
+    --heavy-weight: 700;
 }
 
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 14px;
+    .green {
+        color: var(--Lime-Green);
+        font-weight: var(--heavy-weight);
+    }
+    .red {
+        color: var(--Bright-Red);
+        font-weight: var(--heavy-weight);
+    }
 }
 
 @import 'header';
