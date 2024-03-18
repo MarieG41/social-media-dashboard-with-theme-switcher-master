@@ -44,4 +44,17 @@
             cursor: pointer;
         }
     }
+    .fb-page-views + .dark-cards-overview, .fb-likes + .dark-cards-overview, .ig-likes + .dark-cards-overview, .ig-profile-views + .dark-cards-overview, .retweet + .dark-cards-overview, .tw-likes +.dark-cards-overview , .yt-likes + .dark-cards-overview, .yt-views + .dark-cards-overview {
+        background-color: var(--Dark-Desaturated-Blue-card-bg); 
+        h1 {
+            color: var(--White-Text)
+            }
+            p {
+                color: var(--Desaturated-Blue-Text);
+            }
+        }
+        .fb-page-views + .dark-cards-overview:hover, .fb-likes + .dark-cards-overview:hover, .ig-likes + .dark-cards-overview:hover, .ig-profile-views + .dark-cards-overview:hover, .retweet + .dark-cards-overview:hover, .tw-likes +.dark-cards-overview:hover, .yt-likes + .dark-cards-overview:hover, .yt-views + .dark-cards-overview:hover {
+            background-color: hsl(230, 28%, 25%);
+        }
 }
+

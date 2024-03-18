@@ -10,7 +10,11 @@ header {
             padding-bottom: 10px;
             font-size: 30px;
             font-weight: var(--heavy-weight);
-        }  
+        }
+        p {
+            color: var(--Desaturated-Blue-Text);
+            font-weight: var(--heavy-weight);
+        } 
     }
     
     .dark-mode {

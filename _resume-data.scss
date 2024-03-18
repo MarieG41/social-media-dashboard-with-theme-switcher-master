@@ -4,7 +4,6 @@
     width: 92%;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
-    grid-row: 1.5fr;
     padding-left: 80px;
     padding-right: 80px;
     justify-content: center;
@@ -50,9 +49,20 @@
     .ig-resume-data {
         border-top: 5px solid;
         border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
-        
     }
     .yt-resume-data {
         border-top: 5px solid var(--YouTube);
     }
+}
+ .fb-resume-data + .dark-cards-resume, .twitter-resume-data + .dark-cards-resume, .ig-resume-data + .dark-cards-resume{
+    background-color: var(--Dark-Desaturated-Blue-card-bg);
+    h1 {
+     color: var(--White-Text);
+    }
+    h3 {
+        color: var(--Desaturated-Blue-Text);
+    }
+}
+.fb-resume-data + .dark-cards-resume:hover, .twitter-resume-data + .dark-cards-resume:hover, .ig-resume-data + .dark-cards-resume:hover {
+    background-color: hsl(230, 28%, 25%);
 }
