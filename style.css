@@ -3,9 +3,9 @@
   --Bright-Red: hsl(356, 69%, 56%);
   --Facebook: hsl(208, 92%, 53%);
   --Twitter: hsl(203, 89%, 53%);
-  --Instagram: linear-gradient(hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
+  --Instagram: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   --YouTube: hsl(348, 97%, 39%);
-  --Toggle-dark: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+  --Toggle-dark: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
   --Toggle-light: hsl(230, 22%, 74%);
   --Very-Dark-Blue-bg: hsl(230, 17%, 14%);
   --Very-Dark-Blue-Top-bg-Pattern: hsl(232, 19%, 15%);
@@ -24,6 +24,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-weight: 14px;
+  overflow-x: hidden;
 }
 body .green {
   color: var(--Lime-Green);
@@ -54,7 +55,55 @@ header .dark-mode {
   font-weight: var(--heavy-weight);
   display: flex;
   justify-content: space-evenly;
-  align-items: start;
+  align-items: center;
+}
+header .dark-mode .switch {
+  margin-left: 10px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+header .dark-mode .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+header .dark-mode .switch .slider-round {
+  border-radius: 34px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--Toggle-light);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+header .dark-mode .switch .slider-round::before {
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 30px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+header .dark-mode .switch input:checked + .slider-round {
+  background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+header .dark-mode .switch input:focus + .slider-round {
+  box-shadow: 0 0 1px;
+  background-color: var(--Toggle-light);
+}
+header .dark-mode .switch input:checked + .slider-round:before {
+  -webkit-transform: translateX(-26px);
+  -ms-transform: translateX(-26px);
+  transform: translateX(-26px);
 }
 
 .resume-data {
@@ -90,13 +139,16 @@ header .dark-mode {
 }
 .resume-data p .logo {
   padding-bottom: 0;
-  padding-right: 8px;
 }
 .resume-data .fb-resume-data, .resume-data .twitter-resume-data, .resume-data .ig-resume-data, .resume-data .yt-resume-data {
-  background-color: var(--Light-Grayish-Blue-Card-bg);
+  background-color: var(--Very-Pale-Blue-Top-bg-Pattern);
   text-align: center;
   padding: 50px 0;
   border-radius: 8px;
+}
+.resume-data .fb-resume-data:hover, .resume-data .twitter-resume-data:hover, .resume-data .ig-resume-data:hover, .resume-data .yt-resume-data:hover {
+  background-color: var(--Light-Grayish-Blue-Card-bg);
+  cursor: pointer;
 }
 .resume-data .fb-resume-data {
   border-top: 5px solid var(--Facebook);
@@ -106,7 +158,7 @@ header .dark-mode {
 }
 .resume-data .ig-resume-data {
   border-top: 5px solid;
-  border-color: hsl(329, 70%, 58%);
+  border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
 }
 .resume-data .yt-resume-data {
   border-top: 5px solid var(--YouTube);
@@ -115,7 +167,7 @@ header .dark-mode {
 .overview-data {
   margin-top: 150px;
   padding-left: 80px;
-  padding-right: 80px;
+  padding-right: 40px;
 }
 .overview-data h2 {
   padding-top: 20px;
@@ -129,12 +181,12 @@ header .dark-mode {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1.3fr 1.3fr;
-  gap: 30px;
+  gap: 40px;
 }
 .overview-data .overview .fb-page-views, .overview-data .overview .fb-likes, .overview-data .overview .ig-likes, .overview-data .overview .ig-profile-views, .overview-data .overview .retweet, .overview-data .overview .tw-likes, .overview-data .overview .yt-likes, .overview-data .overview .yt-views {
-  background-color: var(--Light-Grayish-Blue-Card-bg);
+  background-color: var(--Very-Pale-Blue-Top-bg-Pattern);
   display: grid;
-  grid-template-columns: 0.35fr 0.35fr;
+  grid-template-columns: 0.35fr 0.45fr;
   grid-template-rows: 80px 35px;
   column-gap: 40px;
   padding: 30px 15px;
@@ -150,6 +202,13 @@ header .dark-mode {
   font-weight: var(--heavy-weight);
   color: var(--Dark-Grayish-Blue-Text);
   margin-bottom: 50px;
+}
+.overview-data .overview .fb-page-views img .logo, .overview-data .overview .fb-likes img .logo, .overview-data .overview .ig-likes img .logo, .overview-data .overview .ig-profile-views img .logo, .overview-data .overview .retweet img .logo, .overview-data .overview .tw-likes img .logo, .overview-data .overview .yt-likes img .logo, .overview-data .overview .yt-views img .logo {
+  width: 70px;
+}
+.overview-data .overview .fb-page-views:hover, .overview-data .overview .fb-likes:hover, .overview-data .overview .ig-likes:hover, .overview-data .overview .ig-profile-views:hover, .overview-data .overview .retweet:hover, .overview-data .overview .tw-likes:hover, .overview-data .overview .yt-likes:hover, .overview-data .overview .yt-views:hover {
+  background-color: var(--Light-Grayish-Blue-Card-bg);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

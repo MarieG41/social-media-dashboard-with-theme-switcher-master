@@ -1,7 +1,7 @@
 .overview-data {
     margin-top: 150px;
     padding-left: 80px;
-    padding-right: 80px;
+    padding-right: 40px;
     h2 {
         padding-top: 20px;
         padding-bottom: 10px;
@@ -14,11 +14,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1.3fr 1.3fr;
-        gap: 30px;
+        gap: 40px;
         .fb-page-views, .fb-likes, .ig-likes, .ig-profile-views, .retweet, .tw-likes, .yt-likes, .yt-views {
-            background-color: var(--Light-Grayish-Blue-Card-bg);
+            background-color: var(--Very-Pale-Blue-Top-bg-Pattern);
             display: grid;
-            grid-template-columns: 0.35fr 0.35fr;
+            grid-template-columns: 0.35fr 0.45fr;
             grid-template-rows: 80px 35px;
             column-gap: 40px;
             padding: 30px 15px;
@@ -35,6 +35,13 @@
                 margin-bottom: 50px;
                 
             }
+            img .logo {
+                width: 70px;
+            }
+        }
+        .fb-page-views:hover, .fb-likes:hover, .ig-likes:hover, .ig-profile-views:hover, .retweet:hover, .tw-likes:hover, .yt-likes:hover, .yt-views:hover {
+            background-color: var(--Light-Grayish-Blue-Card-bg);
+            cursor: pointer;
         }
     }
 }

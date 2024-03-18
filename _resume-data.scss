@@ -29,14 +29,17 @@
         }
         .logo {
             padding-bottom: 0;
-            padding-right: 8px;
         }
     }
     .fb-resume-data, .twitter-resume-data, .ig-resume-data, .yt-resume-data {
-        background-color: var(--Light-Grayish-Blue-Card-bg);
+        background-color: var(--Very-Pale-Blue-Top-bg-Pattern);
         text-align: center;
         padding: 50px 0;
         border-radius: 8px;
+    }
+    .fb-resume-data:hover, .twitter-resume-data:hover, .ig-resume-data:hover, .yt-resume-data:hover {
+        background-color: var(--Light-Grayish-Blue-Card-bg);
+        cursor: pointer;
     }
     .fb-resume-data {
         border-top: 5px solid var(--Facebook);
@@ -46,7 +49,8 @@
     }
     .ig-resume-data {
         border-top: 5px solid;
-        border-color: hsl(329, 70%, 58%);
+        border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
+        
     }
     .yt-resume-data {
         border-top: 5px solid var(--YouTube);
