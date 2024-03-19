@@ -8,6 +8,16 @@
     padding-right: 80px;
     justify-content: center;
     gap: 40px;
+    @include media($until: tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 0;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
     h1 {
         font-weight: var(--heavy-weight);
         font-size: 70px;
@@ -35,6 +45,14 @@
         text-align: center;
         padding: 50px 0;
         border-radius: 8px;
+        @include media($until: tablet) {
+            padding: 50px 80px;
+        }
+    }
+    .ig-resume-data {
+        @include media($until: tablet) {
+            padding: 50px 110px;
+        }
     }
     .fb-resume-data:hover, .twitter-resume-data:hover, .ig-resume-data:hover, .yt-resume-data:hover {
         background-color: var(--Light-Grayish-Blue-Card-bg);

@@ -1,3 +1,5 @@
+@import 'sass-queries';
+
 :root {
     --Lime-Green: hsl(163, 72%, 41%);
     --Bright-Red: hsl(356, 69%, 56%);
@@ -51,6 +53,12 @@ body {
     h1 {
         color: var(--White-Text);
     }
+    nav {
+        @include media($until: tablet) {
+            border-bottom: 1px solid var(--Desaturated-Blue-Text);
+        } 
+    }
+    
 }
 
 @import 'header';

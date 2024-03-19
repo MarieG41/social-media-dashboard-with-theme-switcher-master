@@ -1,3 +1,10 @@
+/**
+* SassQueries
+* Manage media-queries in Sass easily.
+*
+* @author     Samuel Marchal (zessx)
+* @version    0.3
+*/
 :root {
   --Lime-Green: hsl(163, 72%, 41%);
   --Bright-Red: hsl(356, 69%, 56%);
@@ -48,6 +55,11 @@ body .red {
 .dark-header h1 {
   color: var(--White-Text);
 }
+@media all and (max-width: 767px) {
+  .dark-header nav {
+    border-bottom: 1px solid var(--Desaturated-Blue-Text);
+  }
+}
 
 header {
   margin-bottom: 30px;
@@ -56,8 +68,20 @@ header {
   padding: 40px 80px 240px 80px;
   background-color: var(--Very-Pale-Blue-Top-bg-Pattern);
 }
+@media all and (max-width: 767px) {
+  header {
+    display: block;
+    padding: 40px;
+  }
+}
 header nav {
   color: var(--Very-Dark-Blue-Text);
+}
+@media all and (max-width: 767px) {
+  header nav {
+    border-bottom: 1px solid #000;
+    padding-bottom: 30px;
+  }
 }
 header nav h1 {
   padding-bottom: 10px;
@@ -74,6 +98,12 @@ header .dark-mode {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media all and (max-width: 767px) {
+  header .dark-mode {
+    justify-content: space-between;
+    padding-top: 30px;
+  }
 }
 header .dark-mode .switch {
   margin-left: 10px;
@@ -135,6 +165,18 @@ header .dark-mode .switch input:checked + .slider-round:before {
   justify-content: center;
   gap: 40px;
 }
+@media all and (max-width: 767px) {
+  .resume-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .resume-data h1 {
   font-weight: var(--heavy-weight);
   font-size: 70px;
@@ -162,6 +204,16 @@ header .dark-mode .switch input:checked + .slider-round:before {
   text-align: center;
   padding: 50px 0;
   border-radius: 8px;
+}
+@media all and (max-width: 767px) {
+  .resume-data .fb-resume-data, .resume-data .twitter-resume-data, .resume-data .ig-resume-data, .resume-data .yt-resume-data {
+    padding: 50px 80px;
+  }
+}
+@media all and (max-width: 767px) {
+  .resume-data .ig-resume-data {
+    padding: 50px 110px;
+  }
 }
 .resume-data .fb-resume-data:hover, .resume-data .twitter-resume-data:hover, .resume-data .ig-resume-data:hover, .resume-data .yt-resume-data:hover {
   background-color: var(--Light-Grayish-Blue-Card-bg);
@@ -200,6 +252,14 @@ header .dark-mode .switch input:checked + .slider-round:before {
   padding-left: 80px;
   padding-right: 40px;
 }
+@media all and (max-width: 767px) {
+  .overview-data {
+    margin-top: 30px;
+    padding-left: 15px;
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+}
 .overview-data h2 {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -214,16 +274,30 @@ header .dark-mode .switch input:checked + .slider-round:before {
   grid-template-rows: 1.3fr 1.3fr;
   gap: 40px;
 }
+@media all and (max-width: 767px) {
+  .overview-data .overview {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
 .overview-data .overview .fb-page-views, .overview-data .overview .fb-likes, .overview-data .overview .ig-likes, .overview-data .overview .ig-profile-views, .overview-data .overview .retweet, .overview-data .overview .tw-likes, .overview-data .overview .yt-likes, .overview-data .overview .yt-views {
   background-color: var(--Very-Pale-Blue-Top-bg-Pattern);
   display: grid;
-  grid-template-columns: 0.35fr 0.45fr;
+  grid-template-columns: 0.35fr 0.25fr;
   grid-template-rows: 80px 35px;
   column-gap: 40px;
   padding: 30px 15px;
   justify-content: space-between;
   border-radius: 8px;
   color: var(--Very-Dark-Blue-Text);
+}
+@media all and (max-width: 767px) {
+  .overview-data .overview .fb-page-views, .overview-data .overview .fb-likes, .overview-data .overview .ig-likes, .overview-data .overview .ig-profile-views, .overview-data .overview .retweet, .overview-data .overview .tw-likes, .overview-data .overview .yt-likes, .overview-data .overview .yt-views {
+    grid-template-columns: 0.45fr 0.35fr;
+    column-gap: 0;
+    margin-right: 15px;
+  }
 }
 .overview-data .overview .fb-page-views h1, .overview-data .overview .fb-likes h1, .overview-data .overview .ig-likes h1, .overview-data .overview .ig-profile-views h1, .overview-data .overview .retweet h1, .overview-data .overview .tw-likes h1, .overview-data .overview .yt-likes h1, .overview-data .overview .yt-views h1 {
   font-size: 35px;
