@@ -233,17 +233,17 @@ header .dark-mode .switch input:checked + .slider-round:before {
   border-top: 5px solid var(--YouTube);
 }
 
-.fb-resume-data + .dark-cards-resume, .twitter-resume-data + .dark-cards-resume, .ig-resume-data + .dark-cards-resume {
+.fb-resume-data.dark-cards-resume, .twitter-resume-data.dark-cards-resume, .ig-resume-data.dark-cards-resume, .yt-resume-data.dark-cards-resume {
   background-color: var(--Dark-Desaturated-Blue-card-bg);
 }
-.fb-resume-data + .dark-cards-resume h1, .twitter-resume-data + .dark-cards-resume h1, .ig-resume-data + .dark-cards-resume h1 {
+.fb-resume-data.dark-cards-resume h1, .twitter-resume-data.dark-cards-resume h1, .ig-resume-data.dark-cards-resume h1, .yt-resume-data.dark-cards-resume h1 {
   color: var(--White-Text);
 }
-.fb-resume-data + .dark-cards-resume h3, .twitter-resume-data + .dark-cards-resume h3, .ig-resume-data + .dark-cards-resume h3 {
+.fb-resume-data.dark-cards-resume h3, .twitter-resume-data.dark-cards-resume h3, .ig-resume-data.dark-cards-resume h3, .yt-resume-data.dark-cards-resume h3 {
   color: var(--Desaturated-Blue-Text);
 }
 
-.fb-resume-data + .dark-cards-resume:hover, .twitter-resume-data + .dark-cards-resume:hover, .ig-resume-data + .dark-cards-resume:hover {
+.fb-resume-data.dark-cards-resume:hover, .twitter-resume-data.dark-cards-resume:hover, .ig-resume-data.dark-cards-resume:hover, .yt-resume-data.dark-cards-resume:hover {
   background-color: hsl(230, 28%, 25%);
 }
 
@@ -315,16 +315,16 @@ header .dark-mode .switch input:checked + .slider-round:before {
   background-color: var(--Light-Grayish-Blue-Card-bg);
   cursor: pointer;
 }
-.overview-data .fb-page-views + .dark-cards-overview, .overview-data .fb-likes + .dark-cards-overview, .overview-data .ig-likes + .dark-cards-overview, .overview-data .ig-profile-views + .dark-cards-overview, .overview-data .retweet + .dark-cards-overview, .overview-data .tw-likes + .dark-cards-overview, .overview-data .yt-likes + .dark-cards-overview, .overview-data .yt-views + .dark-cards-overview {
+.overview-data .fb-page-views.dark-cards-overview, .overview-data .fb-likes.dark-cards-overview, .overview-data .ig-likes.dark-cards-overview, .overview-data .ig-profile-views.dark-cards-overview, .overview-data .retweet.dark-cards-overview, .overview-data .tw-likes.dark-cards-overview, .overview-data .yt-likes.dark-cards-overview, .overview-data .yt-views.dark-cards-overview {
   background-color: var(--Dark-Desaturated-Blue-card-bg);
 }
-.overview-data .fb-page-views + .dark-cards-overview h1, .overview-data .fb-likes + .dark-cards-overview h1, .overview-data .ig-likes + .dark-cards-overview h1, .overview-data .ig-profile-views + .dark-cards-overview h1, .overview-data .retweet + .dark-cards-overview h1, .overview-data .tw-likes + .dark-cards-overview h1, .overview-data .yt-likes + .dark-cards-overview h1, .overview-data .yt-views + .dark-cards-overview h1 {
+.overview-data .fb-page-views.dark-cards-overview h1, .overview-data .fb-likes.dark-cards-overview h1, .overview-data .ig-likes.dark-cards-overview h1, .overview-data .ig-profile-views.dark-cards-overview h1, .overview-data .retweet.dark-cards-overview h1, .overview-data .tw-likes.dark-cards-overview h1, .overview-data .yt-likes.dark-cards-overview h1, .overview-data .yt-views.dark-cards-overview h1 {
   color: var(--White-Text);
 }
-.overview-data .fb-page-views + .dark-cards-overview p, .overview-data .fb-likes + .dark-cards-overview p, .overview-data .ig-likes + .dark-cards-overview p, .overview-data .ig-profile-views + .dark-cards-overview p, .overview-data .retweet + .dark-cards-overview p, .overview-data .tw-likes + .dark-cards-overview p, .overview-data .yt-likes + .dark-cards-overview p, .overview-data .yt-views + .dark-cards-overview p {
+.overview-data .fb-page-views.dark-cards-overview p, .overview-data .fb-likes.dark-cards-overview p, .overview-data .ig-likes.dark-cards-overview p, .overview-data .ig-profile-views.dark-cards-overview p, .overview-data .retweet.dark-cards-overview p, .overview-data .tw-likes.dark-cards-overview p, .overview-data .yt-likes.dark-cards-overview p, .overview-data .yt-views.dark-cards-overview p {
   color: var(--Desaturated-Blue-Text);
 }
-.overview-data .fb-page-views + .dark-cards-overview:hover, .overview-data .fb-likes + .dark-cards-overview:hover, .overview-data .ig-likes + .dark-cards-overview:hover, .overview-data .ig-profile-views + .dark-cards-overview:hover, .overview-data .retweet + .dark-cards-overview:hover, .overview-data .tw-likes + .dark-cards-overview:hover, .overview-data .yt-likes + .dark-cards-overview:hover, .overview-data .yt-views + .dark-cards-overview:hover {
+.overview-data .fb-page-views.dark-cards-overview:hover, .overview-data .fb-likes.dark-cards-overview:hover, .overview-data .ig-likes.dark-cards-overview:hover, .overview-data .ig-profile-views.dark-cards-overview:hover, .overview-data .retweet.dark-cards-overview:hover, .overview-data .tw-likes.dark-cards-overview:hover, .overview-data .yt-likes.dark-cards-overview:hover, .overview-data .yt-views.dark-cards-overview:hover {
   background-color: hsl(230, 28%, 25%);
 }
 

@@ -72,7 +72,7 @@
         border-top: 5px solid var(--YouTube);
     }
 }
- .fb-resume-data + .dark-cards-resume, .twitter-resume-data + .dark-cards-resume, .ig-resume-data + .dark-cards-resume{
+ .fb-resume-data.dark-cards-resume, .twitter-resume-data.dark-cards-resume, .ig-resume-data.dark-cards-resume, .yt-resume-data.dark-cards-resume{
     background-color: var(--Dark-Desaturated-Blue-card-bg);
     h1 {
      color: var(--White-Text);
@@ -81,6 +81,6 @@
         color: var(--Desaturated-Blue-Text);
     }
 }
-.fb-resume-data + .dark-cards-resume:hover, .twitter-resume-data + .dark-cards-resume:hover, .ig-resume-data + .dark-cards-resume:hover {
+.fb-resume-data.dark-cards-resume:hover, .twitter-resume-data.dark-cards-resume:hover, .ig-resume-data.dark-cards-resume:hover, .yt-resume-data.dark-cards-resume:hover{
     background-color: hsl(230, 28%, 25%);
 }
